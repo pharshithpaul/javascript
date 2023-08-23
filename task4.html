@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="task4.css">
+	<title>task</title>
+</head>
+<body>
+	<div class="a">
+		<div class="b">
+			<div class="b1">
+				<button onclick="getimage(img2.jpeg)"><img src="img/img2.jpeg" height="200px" width="150px">
+				</button></div>
+			<div class="b2">
+				<button onclick="getimage(img3.jpeg)"><img src="img/img3.jpeg" height="200px" width="150px">
+				</div>
+			<div class="b3">
+				<button onclick="getimage(img4.jpeg)"><img src="img/img4.jpeg" height="200px" width="150px">
+				</button></div>
+		</div>
+		<div class="c" readonly id="imp_path"></div>
+	</div>
+	<script type="text/javascript">
+		function getimage(img_path){
+			document.getElementById('output_Id').innerHTML="'img src'+img_path+"
+		}
+	</script>
+</body>
+</html>

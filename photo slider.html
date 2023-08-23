@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pictures task using JavaScript</title>
+</head>
+<body>
+	<center>
+	   <button onclick="img1()"><img src="img/img2.jpeg" height="50px" width="75px"></button>
+	   <button onclick="img2()"><img src="img/img3.jpeg" height="50px" width="75px"></button>
+	   <button onclick="img3()"><img src="img/img4.jpeg" height="50px" width="75px"></button>
+	   <button onclick="img4()"><img src="img/img5.jpeg" height="50px" width="75px"></button>
+	   <br><br>
+	   <div style="height: 500px; width: 750px;">
+		   <div id="div"></div>
+	    </div>
+	    <script type="text/javascript">
+		    var i = 1;
+		    function img1()
+		    {
+			  if (i<=5)
+			    {
+				    var a = document.getElementById('div')
+				    a.innerHTML = '<img src="img/img2.jpeg" height="500px" width="750px">'
+				    i++;
+			    }
+		    }	
+		    function img2()
+		    {
+	
+		    	if (i>=2) 
+		    	{
+		    		i--;
+		    		var a = document.getElementById('div')
+		    		a.innerHTML = '<img src="img/img3.jpeg" height="500px" width="750px">'
+		    	}
+		    }
+		    function img3()
+		    {
+		    	if (i<=6) 
+		    	{
+		    		var a = document.getElementById('div')
+		    		a.innerHTML = '<img src="img/img4.jpeg" height="500px" width="750px">'
+		    		i++;
+
+		    	}
+		    }
+		    function img4()
+		    {
+		    	if (i<=5) 
+		    	{
+		    		var a = document.getElementById('div')
+		    		a.innerHTML = '<img src="img/img5.jpeg" height="500px" width="750px">'
+		    		i++;
+		    	}
+		    }			
+	    </script>
+	</center>
+</body>
+</html>

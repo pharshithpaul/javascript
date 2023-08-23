@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculator</title>
+</head>
+<body>
+	<input type="number" name="first" id="first">
+	<select id="ope">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">x</option>
+		<option value="/">/</option>
+	</select>
+	<input type="number" name="" id="second">
+	<input type="button" value="Calculate" onclick="cal()" ><br><br><br>
+	<input type="number" readonly id="result">
+
+</body>
+<script type="text/javascript">
+	var a = "mavin";
+	function cal(){
+		var opr1=parseInt(document.getElementById('first').value);
+		var opr2=parseInt(document.getElementById('second').value);
+		var ope=document.getElementById('ope').value;
+		console.log(ope)
+		if(ope=='+'){
+			  let add=(opr1)+(opr2);
+			  document.getElementById('result').value=add; 
+		}else if(ope=='-'){
+			 let sub=(opr1)-(opr2);
+			  document.getElementById('result').value=sub;
+		}else if(ope=='*'){
+			 let mul=(opr1)*(opr2);
+			  document.getElementById('result').value=mul;
+		}else{
+			let div=(opr1)/(opr2);
+			  document.getElementById('result').value=div;
+		}
+	} 
+</script>
+</html>

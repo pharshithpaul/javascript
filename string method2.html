@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>method2</title>
+</head>
+<body>
+	<table border="20">
+		<tr>
+			<td>D</td>
+			<td>R</td>
+			<td>I</td>
+			<td>V</td>
+			<td>E</td>
+			<td>R</td>
+			<td>E</td>
+			<td>A</td>
+			<td>D</td>
+			<td>Y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+	</table>
+  <script>
+	function getstr(str){
+		document.write("<b>"+str+"</b><br>")
+	}
+	let name = 'DRIVE READY';
+	getstr("Name="+name)
+	getstr("Lenght="+name.length)
+	getstr("char At ="+name.charAt(2))
+	getstr("Index of="+name.indexOf('R'))
+	getstr("Index of 2nd way="+name.indexOf('Y'))
+	getstr("last index of string="+name.lastIndexOf('R'))
+	let name1 = 'DRIVE READY';
+	getstr("to lower case="+name1.toLowerCase())
+	getstr("to upper case="+name.toUpperCase())
+	let name2 = 'Batch';
+	let name3 = 'FN';
+	let name4 = 'FSD';
+	getstr(" Concate of string="+name1.concat(name2))
+	getstr(" Concate of string="+name1.concat(name2,name3,name4))
+
+  </script>
+</body>
+</html>

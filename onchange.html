@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>on change</title>
+</head>
+<body>
+  <center>
+    <form id="myform">
+    First name: <input type="text" name="fname"><br><br>
+    Last name: <input type="text" name="lname"><br><br>
+    <select name="college">
+    <option>-----Select college-----</option>
+    <option value="AEC">AEC</option>
+    <option value="ACET">ACET</option>
+    <option value="ACDE">ACDE</option>
+    </select><br><br>
+    <input type="button" name="" onclick="formsubmit()" value="SUBMIT FORM">
+    </form>
+  </center>
+  <script type="text/javascript">
+    function formsubmit {
+      let form = getElementById('myform');
+      form.submit()
+    }
+  </script>
+</body>
+</html>
